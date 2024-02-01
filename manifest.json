@@ -1,0 +1,16 @@
+{
+    "action": {
+       "default_popup": "popup.html"
+    },
+    "content_scripts": [ {
+       "css": [ "css/content.css" ],
+       "js": [ "js/content.js" ],
+       "matches": [ "https://*.linkedin.com/*" ],
+       "run_at": "document_end"
+    } ],
+    "description": "Get Insights from LinkedIn posts.",
+    "manifest_version": 3,
+    "name": "LinkedIn Content Insights",
+    "version": "0.0.0.1"
+ }
+ 
